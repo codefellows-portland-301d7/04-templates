@@ -21,15 +21,6 @@ articleView.populateFilters = function() {
     template = Handlebars.compile(source);
     html = template(context);
     $('#category-filter').append(html);
-  /*  category = $(this).attr('data-category');
-    optionTag = '<option value="' + category + '">' + category + '</option>';
-    if ($('#category-filter option[value="' + category + '"]').length === 0) {
-      $('#category-filter').append(optionTag);
-    }
-    */
-
-
-
   });
 };
 
