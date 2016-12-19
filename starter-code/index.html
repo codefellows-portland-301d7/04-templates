@@ -19,15 +19,16 @@
     - Insert correct placeholder properties based on our Model.
     -->
     <script id="article-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-author="{{Article}}" data-category="">
+      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
-            By <address><a href=""> </a></address>
-            {{publishStatus}}
+            By <address><a href="{{authorUrl}}">{{author}}</a></address>
+            <p>{{publishStatus}}</p>
+            <p>{{category}}</p>
           </div>
         </header>
-        <section class="article-body"> </section>
+        <section class="article-body">{{{body}}}</section>
         <a href="" class="read-on"> Read on &rarr;</a>
       </article>
     </script>
